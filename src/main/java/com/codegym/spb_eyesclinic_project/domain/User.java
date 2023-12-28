@@ -2,10 +2,7 @@ package com.codegym.spb_eyesclinic_project.domain;
 
 import com.codegym.spb_eyesclinic_project.domain.Enum.EDegree;
 import com.codegym.spb_eyesclinic_project.domain.Enum.ERole;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -14,6 +11,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
+@Builder
 @AllArgsConstructor
 public class User {
     @Id

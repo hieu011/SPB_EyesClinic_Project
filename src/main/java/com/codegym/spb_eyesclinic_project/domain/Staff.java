@@ -20,6 +20,8 @@ public class Staff {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String phoneNumber;
+
     private String address;
 
     private String experience;
@@ -36,4 +38,8 @@ public class Staff {
     @OneToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    public Staff(Long id) {
+        this.id = id;
+    }
 }
