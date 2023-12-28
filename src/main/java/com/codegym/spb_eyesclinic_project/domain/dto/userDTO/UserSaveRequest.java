@@ -1,4 +1,4 @@
-package com.codegym.spb_eyesclinic_project.service.user.request;
+package com.codegym.spb_eyesclinic_project.domain.dto.userDTO;
 
 
 import lombok.AllArgsConstructor;

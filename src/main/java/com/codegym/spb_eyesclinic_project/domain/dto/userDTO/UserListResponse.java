@@ -1,4 +1,4 @@
-package com.codegym.spb_eyesclinic_project.service.user.response;
+package com.codegym.spb_eyesclinic_project.domain.dto.userDTO;
 
 
 import lombok.*;

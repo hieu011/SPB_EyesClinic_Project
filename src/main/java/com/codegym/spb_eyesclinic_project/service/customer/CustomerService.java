@@ -1,22 +1,16 @@
 package com.codegym.spb_eyesclinic_project.service.customer;
 
 import com.codegym.spb_eyesclinic_project.domain.Customer;
-import com.codegym.spb_eyesclinic_project.domain.Enum.ERole;
-import com.codegym.spb_eyesclinic_project.domain.User;
 import com.codegym.spb_eyesclinic_project.repository.CustomerRepository;
 
 import com.codegym.spb_eyesclinic_project.service.customer.request.CustomerSaveRequest;
 import com.codegym.spb_eyesclinic_project.service.customer.response.CustomerResponse;
 import com.codegym.spb_eyesclinic_project.service.response.SelectOptionResponse;
-import com.codegym.spb_eyesclinic_project.service.user.request.UserSaveRequest;
 import com.codegym.spb_eyesclinic_project.utils.AppUtils;
 import lombok.AllArgsConstructor;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
