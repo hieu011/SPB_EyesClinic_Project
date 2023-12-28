@@ -14,12 +14,12 @@ import java.math.BigDecimal;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class EyeService {
+public class EyeCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nameService;
+    private String nameCategory;
 
     private BigDecimal price;
 

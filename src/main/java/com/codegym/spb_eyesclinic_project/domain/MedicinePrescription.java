@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "medicine_prescription")
@@ -27,7 +28,16 @@ public class MedicinePrescription {
 
     private Long quantity;
 
+    private BigDecimal price;
+
     @Enumerated(EnumType.STRING)
     private EType type;
+
+    public MedicinePrescription(Prescription prescription, Medicine medicine) {
+        this.prescription = prescription;
+        this.medicine = medicine;
+
+    }
+
 
 }
