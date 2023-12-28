@@ -20,8 +20,6 @@ public class Bill {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private BigDecimal totalPrice;
-
     private LocalDateTime dateDisease;
 
     @OneToOne

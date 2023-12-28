@@ -21,9 +21,11 @@ public class Booking {
     private Long id;
 
     @OneToOne
-    private EyeService eyeService;
+    private EyeCategory eyeCategory;
 
     private LocalDateTime dateBooking;
+
+    private LocalDateTime dateAppointment;
 
     @ManyToOne
     private Customer customer;
